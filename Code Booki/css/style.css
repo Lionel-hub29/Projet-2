@@ -35,6 +35,69 @@ a {
     font-size: 22px;
 }
 
+/* mise en forme du Header */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    
+}
+
+.logoHeader img {
+   width: 50px;
+   height: 15px;
+   margin-top: 8px;
+}
+
+.menuHeader {
+    list-style-type: none;
+    margin-top: 8px;
+ }
+
+.menuHeader a {
+    padding-right: 30px;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: overline;
+    
+}
+
+
+/* mise en forme de l'accroche */
+
+.accroche h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* mise en forme de la recherche */
+
+.formulaireRecherche {
+    margin-bottom: 10px;
+}
+.boutonRecherche {
+    padding-left: 0;
+    border: 0;
+    background-color: blue;
+    color : white;
+
+}
+
+.texteRecherche {
+    padding-right: 0;
+    border-right: 0;
+}
+
+.logoRecherche {
+    background-color: rgb(226, 223, 223);
+}
+
+
 .card {
     background-color: white;
     border-radius: 20px;
@@ -90,6 +153,7 @@ a {
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
+    
 }
 
 .populaires-cards img {
