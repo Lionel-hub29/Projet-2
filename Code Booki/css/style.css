@@ -60,7 +60,7 @@ a {
     padding-right: 30px;
 }
 
-a:hover {
+.header a:hover {
     color: blue;
     text-decoration: overline;
     
@@ -69,8 +69,8 @@ a:hover {
 
 /* mise en forme de l'accroche */
 
-.accroche h4 {
-    margin-top: 10px;
+.accroche h3 {
+    margin-top: 50px;
     margin-bottom: 10px;
 }
 
@@ -78,24 +78,117 @@ a:hover {
 /* mise en forme de la recherche */
 
 .formulaireRecherche {
-    margin-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    height: 30px;
 }
+
+.formulaireRecherche i {
+    color: black;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(226, 221, 221);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
 .boutonRecherche {
-    padding-left: 0;
+    padding-left: 10px;
     border: 0;
-    background-color: blue;
+    background-color: rgb(32, 67, 224);
     color : white;
+    height: 36px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 
 }
 
 .texteRecherche {
     padding-right: 0;
     border-right: 0;
+    height: 30px;
+   
 }
 
 .logoRecherche {
     background-color: rgb(226, 223, 223);
+    height: 36px;
+
+   
+   
 }
+
+/* mise en forme du filtre recherche */
+
+.filtreRecherche {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 30px;
+    align-items: center;
+    
+}
+
+.filtreRecherche h4 {
+    margin-right: 10px;
+}
+
+.filtreEco {
+    height: 30px;
+    border-radius: 15px;
+    margin-right: 10px;
+    background-color: white;
+    font-weight: bold;
+    
+    
+}
+
+.filtreFamilial {
+    height: 30px;
+    border-radius: 15px;
+    margin-right: 10px;
+    background-color: white;
+    font-weight: bold;
+    
+}
+
+.filtreRoman {
+    height: 30px;
+    border-radius: 15px;
+    margin-right: 10px;
+    background-color: white;
+    font-weight: bold;
+    
+}
+
+.filtrePepites {
+    height: 30px;
+    border-radius: 15px;
+    background-color: white;
+    font-weight: bold;
+    
+}
+
+.filtreEco:hover, .filtreFamilial:hover, .filtreRoman:hover, .filtrePepites:hover {
+    background-color: #d3e1f7;
+}
+
+.information {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.information i {
+    color: rgb(255, 255, 255);
+    background-color:#0065FC ;
+    border-radius: 15px;
+    border-color: grey;
+
+    
+}
+
+
+
 
 
 .card {
@@ -136,7 +229,18 @@ a:hover {
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 65%;
+    width: 32%;
+    
+}
+
+.hebergements .card {
+    display: flex;
+    flex-direction: row;
+}
+
+.hebergements img {
+    width: auto;
+    height: 130px;
 }
 
 /****** Populaires ***********/
@@ -185,6 +289,50 @@ a:hover {
     margin-bottom: 5px;
 }
 
+/* mise en forme des activités */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    column-gap: 10px;
+   
+}
+
+.grid-container img {
+    /*object-fit: contain;*/
+    width: 300px;
+    height: 400px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.grid-item {
+    background-color: rgb(238, 235, 235);
+    margin: 2px;
+    border-radius: 20px;
+}
+
+.grid-container .card-txt {
+    padding-left: 20px;
+}
+
+
+/* mise en forme du footer */
+
+.footer {
+    display: flex;
+    background-color: rgb(223, 219, 219) ;
+    margin-top: 50px;
+    padding-left: 20px;
+}
+
+.apropos {
+    margin-right: 150px;
+}
+
+.noshebergements {
+    margin-right: 150px;
+}
 
 
 
