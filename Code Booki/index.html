@@ -29,38 +29,40 @@
         </header>
         <section class="accroche">
             <div>
-                <h3>Trouver votre hébergement pour des vacances de rêve</h3>
+                <h2>Trouver votre hébergement pour des vacances de rêve</h2>
                 <p>En plein centre-ville ou en pleine nature</p>
             </div>
             <div class="barreRecherche">
                 <div class="logoRecherche"><i class="fa-solid fa-location-dot"></i></div>
                 <div class="rechercheVille"><input class="texteRecherche" type="search" name="ville" id="ville"
                         placeholder="Marseille,France" required></div>
-                <div><button class="boutonRecherche" type="submit">Rechercher</button></div>
+                <div>
+                    <button class="boutonRecherche" type="submit">Rechercher</button>
+                    <div class="loupe"><i class="fa-solid fa-magnifying-glass"></i></div>
+                </div>
             </div>
         </section>
 
         <section>
             <div class="filtreRecherche">
-                <div>
-                    <h4>Filtres</h4>
-                </div>
+
+                <h4>Filtres</h4>
 
                 <div class="bouton">
-                    <button type="button" class="filtreEco">
-                        <i class="fa-sharp fa-solid fa-money-bill"></i> &#201;conomique
+                    <button type="button" class="filtreEco filtre">
+                        <i class="fa-sharp fa-solid fa-money-bill"></i>&#201;conomique
                     </button>
 
-                    <button type="button" class="filtreEco">
-                        <i class="fa-solid fa-person"></i> Familial
+                    <button type="button" class="filtreFamilial filtre">
+                        <i class="fa-solid fa-person"></i>Familial
                     </button>
 
-                    <button type="button" class="filtreRoman">
-                        <i class="fa-solid fa-heart"></i> Romantique
+                    <button type="button" class="filtreRoman filtre">
+                        <i class="fa-solid fa-heart"></i>Romantique
                     </button>
 
-                    <button type="button" class="filtrePepites">
-                        <i class="fa-solid fa-fire"></i> Nos pépites
+                    <button type="button" class="filtrePepites filtre">
+                        <i class="fa-solid fa-fire"></i>Nos pépites
                     </button>
                 </div>
             </div>
@@ -68,7 +70,7 @@
         </section>
 
         <div class="information">
-            <i class="fa-solid fa-info"></i>
+            <div class="information-icon"><i class="fa-solid fa-info"></i></div>
             <p>Plus de 500 logements sont
                 disponibles dans cette ville</p>
         </div>
@@ -76,7 +78,9 @@
         <main>
             <div class="hebergements-and-populaires">
                 <section class="affichageHebergement">
-                    <div>Hébergements à Marseille</div>
+                    <div>
+                        <h3>Hébergements à Marseille</h3>
+                    </div>
                     <div class="hebergements">
                         <div>
                             <a href="#">
@@ -211,7 +215,9 @@
                             </a>
                         </div>
                     </div>
-                    <div>Afficher plus</div>
+                    <div class="afficherPlus">
+                        <h3>Afficher plus</h3>
+                    </div>
 
                 </section>
                 <section class="populaires">
@@ -284,7 +290,7 @@
                 </section>
             </div>
         </main>
-        <section>
+        <section class="activites">
             <div>
                 <h3> Activités à Marseille</h3>
             </div>
