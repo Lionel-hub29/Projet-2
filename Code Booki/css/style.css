@@ -96,6 +96,8 @@ a {
 .barreRecherche {
   display: flex;
   margin-top: 30px;
+  width: 377px;
+  height: 49px;
 }
 
 .boutonRecherche {
@@ -155,6 +157,7 @@ a {
 .filtreRecherche {
   display: flex;
   margin-bottom: 30px;
+  margin-top: 15px;
   height: 30px;
   align-items: center;
 }
@@ -639,8 +642,11 @@ a {
   }
 
   .bouton {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     padding-left: 20px;
     margin-left: 0;
+    
   }
 
   .loupe {
@@ -680,7 +686,7 @@ a {
   }
 
    .information {
-    margin-top: 30px;
+    margin-top: 80px;
     padding-left: 15px;
   }
 
