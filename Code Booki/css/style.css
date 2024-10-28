@@ -691,21 +691,25 @@ a {
   }
 
    .filtreEco {
+    display: flex;
+    justify-content: center;
     margin-bottom: 10px;
-    width: 160px;
+    width: 185px;
     height: 40px;
     font-weight: bold ;
   }
 
   .filtreFamilial, .filtreRoman, .filtrePepites {
-    width: 160px;
+    display: flex;
+    justify-content: center;
+    width: 185px;
     height: 40px;
     font-weight: bold ;
   }
 
   .filtreFamilial {
-    text-align:start;
-    padding-left: 30px;
+     padding-left: 10px;
+     padding-right: 35px;
   }
 
 
@@ -781,6 +785,7 @@ a {
 
   .activites {
     width: 100%;
+    max-width: 403px;
     margin-top: 30px;
     padding-left: 20px;
   }
@@ -813,7 +818,7 @@ a {
   }
 
   
-  /* mis een forme du footer */
+  /* mise en forme du footer */
 
   .footer {
     flex-direction: column;
