@@ -3,6 +3,7 @@
   font-family: "Raleway", sans-serif;
 }
 
+
 :root {
   --main-color: #0065fc;
   --main-bg-color: #f2f2f2;
@@ -96,7 +97,8 @@ a {
 .barreRecherche {
   display: flex;
   margin-top: 30px;
-  width: 377px;
+  width: 100%;
+  max-width: 375px;
   height: 49px;
 }
 
@@ -413,7 +415,8 @@ a {
   background-color: #f2f2f2;
   border-radius: 20px;
   margin-right: 10px;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   height: 400px;
 }
 
@@ -554,22 +557,22 @@ a {
 
 }
 
-/* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+/* Small devices (phones, less than 500px) */
+@media (max-width: 500px) {
 
-   .main-container {
-        padding-left: 0;
-        padding-right: 0;
-    }
+.main-container {
+    padding-left: 0;
+    padding-right: 0;
+}
 
    
 
   /* mis en place du header */
-  .header {
+.header {
     flex-direction: column;
   }
 
-  .logoHeader img {
+.logoHeader img {
     width: 60px;
     height: 20px;
     margin-top: 30px;
@@ -616,9 +619,9 @@ a {
   /* Mise en place de la barre de recherche */
 
   .barreRecherche {
-    margin-left: 0;
+    width: 100%;
+    max-width: 350px;
     padding-left: 20px;
-    margin-top: 30px;
   }
 
   .logoRecherche {
@@ -627,8 +630,12 @@ a {
   }
 
   .rechercheVille {
-    width: 240px;
+    width: 225px;
     height: 43px;
+  }
+
+  .filtreRecherche {
+    width: 100%;
   }
 
   .filtreRecherche h4 {
@@ -639,14 +646,14 @@ a {
   .boutonRecherche {
     visibility: hidden;
     position: absolute;
+    width: 5px;
   }
 
   .bouton {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-left: 20px;
+    padding-left: 5px;
     margin-left: 0;
-    
   }
 
   .loupe {
@@ -694,7 +701,8 @@ a {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
-    width: 185px;
+    width: 160px;
+  
     height: 40px;
     font-weight: bold ;
   }
@@ -702,14 +710,14 @@ a {
   .filtreFamilial, .filtreRoman, .filtrePepites {
     display: flex;
     justify-content: center;
-    width: 185px;
+    width: 160px;
     height: 40px;
     font-weight: bold ;
   }
 
   .filtreFamilial {
-     padding-left: 10px;
-     padding-right: 35px;
+    padding-left: 10px;
+    padding-right: 35px;
   }
 
 
@@ -724,7 +732,8 @@ a {
 
   .hebergements-and-populaires section {
     border-radius: 0;
-    padding-left: 30px;
+    padding-left: 20px;
+    padding-right: 10px;
    }
 
   .hebergements-and-populaires .card {
@@ -734,6 +743,7 @@ a {
 
   .hebergements {
     grid-template-columns: 1fr;
+    row-gap: 10px;
   }
 
   .hebergements .card {
@@ -785,9 +795,7 @@ a {
 
   .activites {
     width: 100%;
-    max-width: 403px;
-    margin-top: 30px;
-    padding-left: 20px;
+    max-width: 365px;
   }
 
   .activites h3 {
@@ -801,7 +809,7 @@ a {
 
   .item {
     width: 100%;
-    max-width: 340px;
+    max-width: 330px;
     height: auto;
     background-color: white;
     box-shadow: 0px 5px 20px 0px #e2e1e1 ;
@@ -823,7 +831,6 @@ a {
   .footer {
     flex-direction: column;
     gap: 10px;
-    padding-left: 30px;
   }
  
 }
